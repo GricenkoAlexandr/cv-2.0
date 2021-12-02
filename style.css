@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=El+Messiri:wght@400;500;600;700&display=swap');
+
+body {
+    background: url(img/kiev.jpg) no-repeat fixed center ;
+    background-size: 100% 100%;
+    font-family: 'Caveat', cursive;
+}
+
+/* header */
+
+.tecblock{
+    background-color: rgba(33, 65, 124, 0.2);
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.soundbtn {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    color: #0026ff;
+    border-radius:10px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow:2px 2px 15px #2b8510;
+    transition: 0.5s;    
+}
+
+.clang {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+    color: #0026ff;
+    border-radius:10px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow:2px 2px 15px #2b8510;
+    transition: 0.5s;
+}
+
+
+/* main */
+
+.cvblock {
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "head head"
+    "photo experience"
+    "contact experience"
+    "skills experience";
+    gap: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 248, 12, 0.3);
+    text-align: center;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.5s;
+}
+
+.headblock {
+    grid-area: head;
+    background-color: rgba(253, 5, 5, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headblock:hover {
+    box-shadow:2px 2px 15px #db7617da;
+    background-color: rgb(250, 233, 3);
+}
+
+/* avatar */
+
+.photo {
+    grid-area: photo;
+    background-color: rgba(221, 93, 7, 0.5);
+}
+
+.photoava {
+    display: flex;
+    justify-content: center;
+}
+
+
+.avatar {
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color:rgb(71, 83, 255);
+}
+
+.avatarbtn {
+    color: rgb(71, 105, 255);
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around
+}
+
+.lftbtn,
+.rtbtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: yellow;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* contact */
+
+.contact {
+    grid-area: contact;
+    background-color: rgba(248, 245, 34, 0.5);
+}
+
+/* skills */
+
+.skills {
+    grid-area: skills;
+    background-color: rgba(114, 245, 8, 0.5);
+}
+
+/* experience */
+
+.experience {
+    grid-area: experience;
+    background-color: rgba(8, 248, 236, 0.5);
+}
+
+/* footer */
+
+footer {
+    min-height: 30px;
+    background-color: rgba(64, 155, 56, 0.3);
+}
+
+h3 {
+    color: rgb(2, 5, 19);
+    text-transform: capitalize;
+    
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgb(255, 251, 0);
+    margin: 10px 0;
+}
+
+/* adaptive*/
+
+@media all and (max-width: 480px) {
+    .cvblock {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 5fr;
+    grid-template-areas: 
+    "head"
+    "photo"
+    "contact"
+    "skills"
+    "experience";
+    gap: 3px;
+    padding: 10px;
+    }
+}
+
+.hidden {
+    display: none;
+}
