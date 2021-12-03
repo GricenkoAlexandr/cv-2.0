@@ -101,7 +101,12 @@ body {
 
 .photo {
     grid-area: photo;
-    background-color: rgba(179, 255, 0, 0.884);
+    background-color: transparent;
+}
+
+.photo:hover {
+    box-shadow:2px 2px 15px #4ff3ff;
+    background-color: rgb(44, 250, 3);
 }
 
 .photoava {
@@ -112,7 +117,7 @@ body {
 
 
 .avatar {
-    max-height: 200px;
+    max-height: 250px;
     border-radius: 50%;
     overflow: hidden;
     background-color:rgb(71, 83, 255);
