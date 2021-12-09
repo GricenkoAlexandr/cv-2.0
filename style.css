@@ -29,7 +29,7 @@ body {
     margin: 5px;
     background: transparent;
     color: #0026ff;
-    border-radius:10px;
+    border-radius:20px;
     font-size: 18px;
     font-weight: 700;
     box-shadow:2px 2px 15px #2b8510;
@@ -41,13 +41,14 @@ body {
     margin: 5px;
     background: transparent;
     color: #0026ff;
-    border-radius:10px;
+    border-radius:20px;
     font-size: 18px;
     font-weight: 700;
     box-shadow:2px 2px 15px #2b8510;
     transition: 0.5s;
 }
 
+/* header end*/
 
 /* main */
 
@@ -60,30 +61,33 @@ body {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 0.4fr 1fr 0.5fr 1fr;
     grid-template-areas: 
     "head head"
     "photo experience"
     "contact experience"
     "skills experience";
     gap: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(0, 248, 12, 0.3);
     text-align: center;
 }
 
+/* items */
 .item {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .item:hover {
     transform: scale(1.02, 1.02);
-    transition: 0.5s;
+    transition: 1s;
 }
+
+/* items end */
 
 .headblock {
     grid-area: head;
-    background-color: rgba(253, 5, 5, 0.5);
+    background-color: rgba(251, 255, 0, 0.2);
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,20 +97,15 @@ body {
 }
 
 .headblock:hover {
-    box-shadow:2px 2px 15px #db7617da;
-    background-color: rgb(250, 233, 3);
+    box-shadow:2px 2px 15px #00ff22f3;
+    background-color: rgb(248, 232, 0);
 }
 
 /* avatar */
 
 .photo {
     grid-area: photo;
-    background-color: transparent;
-}
-
-.photo:hover {
-    box-shadow:2px 2px 15px #4ff3ff;
-    background-color: rgb(44, 250, 3);
+    background-color: rgba(252, 102, 2, 0.2);
 }
 
 .photoava {
@@ -117,7 +116,7 @@ body {
 
 
 .avatar {
-    max-height: 250px;
+    max-height: 200px;
     border-radius: 50%;
     overflow: hidden;
     background-color:rgb(71, 83, 255);
@@ -130,18 +129,21 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-around
+    justify-content:space-around;
+    margin: 10px 0;
 }
 
 .lftbtn,
 .rtbtn {
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: transparent;
     color: yellow;
     font-weight: 800;
     font-size: 20px;
 }
+
+/* avatar end */
 
 /* contact */
 
@@ -150,12 +152,43 @@ body {
     background-color: rgba(248, 245, 34, 0.5);
 }
 
+.phone {
+    margin: 10px 0;
+}
+
+.phone a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.social-block {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 15px;
+}
+
+.social-block li {
+    list-style: none;
+    margin: 15px 15px;
+    font-size: 30px;
+}
+
+.social-block li a {
+    color: rgb(4, 0, 255);
+}
+
+/* contact end */
+
 /* skills */
 
 .skills {
     grid-area: skills;
     background-color: rgba(114, 245, 8, 0.5);
 }
+
+/* skills end */
 
 /* experience */
 
@@ -164,12 +197,19 @@ body {
     background-color: rgba(8, 248, 236, 0.5);
 }
 
+/* experience end*/
+
+/* main end */
+
 /* footer */
 
 footer {
     min-height: 30px;
     background-color: rgba(64, 155, 56, 0.3);
+    color: crimson;;
 }
+
+/* footer end */
 
 h3 {
     color: rgb(2, 5, 19);
@@ -181,12 +221,12 @@ h3 {
     margin: 10px 0;
 }
 
-/* adaptive*/
+/* adaptive */
 
 @media all and (max-width: 480px) {
     .cvblock {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 5fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr 1fr 2fr;
     grid-template-areas: 
     "head"
     "photo"
@@ -197,6 +237,8 @@ h3 {
     padding: 10px;
     }
 }
+
+
 
 .hidden {
     display: none;
