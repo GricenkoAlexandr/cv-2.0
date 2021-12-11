@@ -1,6 +1,7 @@
 
 console.log('JS подключен!');
 
+/* Avatar move */
 const btnl=document.querySelector('.lftbtn');
 const btnr=document.querySelector('.rtbtn');
 let avas=document.querySelectorAll('.avatar');
@@ -35,3 +36,18 @@ function rightmove() {
     }
     moveAva();
 }
+
+/* Avatar move end */
+
+/* Modal */
+
+let modBtn=document.querySelector('.btn_in');
+let modWin=document.querySelector('.modal_win');
+
+function modalhide() {
+    modWin.classList.add('hidden');
+}
+
+modBtn.addEventListener('click', modalhide)
+
+/* Modal end */

@@ -201,6 +201,86 @@ body {
 
 /* main end */
 
+/* Modal window */
+
+.modal_win {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.modal_content {
+    max-width: 700px;
+    min-height: 100px;
+    background: rgba(199, 239, 241, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    justify-self: center;
+    position: fixed;
+    top:30%;
+    left: 30%;
+}
+
+.modal_content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: red;
+    margin: 15px;
+}
+
+.modal_content p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #200ae7;
+    margin: 20px;
+}
+
+.button_mod_block {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_in, 
+.btn_out {
+    margin: 10px;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color:rgb(238, 238, 238);
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #3ae218;
+    text-decoration: none;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.btn_in {
+    background: rgba(52, 238, 6, 0.5);
+}
+
+.btn_out {
+    background: rgba(247, 16, 0, 0.5);
+}
+
+.btn_in:hover, 
+.btn_out:hover {
+    box-shadow:2px 2px 20px #d118e2;
+    transform: scale(1.02, 1.02);
+}
+
+/* Modal window end */
+
 /* footer */
 
 footer {
@@ -236,6 +316,43 @@ h3 {
     gap: 3px;
     padding: 10px;
     }
+
+    .modal_content {
+        max-width: 350px;
+        min-height: 50px;
+        background: rgba(199, 239, 241, 0.5);
+        border-radius: 20px;
+        text-align: center;
+        justify-self: center;
+        position: fixed;
+        top:5%;
+        left: 1%;
+    }
+
+    .modal_content p {
+        font-size: 15px;
+    }
+
+    .button_mod_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_in, 
+    .btn_out {
+    margin: 10px;
+    width: 250px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    color:rgb(238, 238, 238);
+    font-size: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #3ae218;
+    text-decoration: none;
+}
+
 }
 
 
