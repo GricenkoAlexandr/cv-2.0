@@ -188,6 +188,11 @@ body {
     background-color: rgba(114, 245, 8, 0.5);
 }
 
+.tekskills,
+.petprojects {
+    list-style: none;
+}
+
 /* skills end */
 
 /* experience */
@@ -299,6 +304,11 @@ h3 {
     font-size: 24px;
     text-shadow: 2px 2px 4px rgb(255, 251, 0);
     margin: 10px 0;
+}
+
+h4 {
+    color:rgb(5, 22, 255);
+    margin: 10px;
 }
 
 /* adaptive */
