@@ -39,6 +39,24 @@ function rightmove() {
 
 /* Avatar move end */
 
+/* Company */
+
+let cbtn=document.querySelector('.company-btn');
+let cominfo=document.querySelector('.company-info');
+
+
+
+
+
+function togglefunc() {
+    console.log('Тоглим')
+    cominfo.classList.toggle('hidden');
+}
+
+cbtn.addEventListener('click', togglefunc)
+
+/* Company end */
+
 /* Modal */
 
 let modBtn=document.querySelector('.btn_in');
