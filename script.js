@@ -39,23 +39,49 @@ function rightmove() {
 
 /* Avatar move end */
 
-/* Company */
-
-let cbtn=document.querySelector('.company-btn');
-let cominfo=document.querySelector('.company-info');
+/* Company accordeon */
 
 
+let cbtn=document.querySelectorAll('.company-btn');
+let info=document.querySelectorAll('.company-info');
 
-
-
-function togglefunc() {
-    console.log('Тоглим')
-    cominfo.classList.toggle('hidden');
+for (let j=0; j<info.length; j++) {
+    info[j].classList.add('hidden');
 }
 
-cbtn.addEventListener('click', togglefunc)
+for (let i=0; i<cbtn.length; i++) {
+    cbtn[i].addEventListener('click', togglefunc);
+}
 
-/* Company end */
+function togglefunc() {
+    this.classList.toggle('active');
+    infa = this.nextElementSibling;
+    infa.classList.toggle('hidden');
+
+}
+
+
+/* Company accordeon end */
+
+/* Audio */
+
+let aud=document.querySelector('.audioset');
+
+function muzon() {
+aud.volume=0.1;
+console.log('Музон он');
+}
+
+muzon();
+
+let musoff=document.querySelector('.soundbtn');
+
+musoff.addEventListener("click", ()=> {
+  aud.volume=0.0;
+  console.log('Музика выкл')
+})
+
+/* Audio end */
 
 /* Modal */
 

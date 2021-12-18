@@ -41,7 +41,7 @@ body {
     background-color:transparent;
     padding: 5px 15px;
     border-radius: 10px;
-    box-shadow:2px 2px 15px #2b8510;
+    box-shadow:2px 2px 15px rgb(43, 133, 16);
     font-weight: 700;
     color: rgb(250, 37, 0);
 }
@@ -54,8 +54,9 @@ body {
     border-radius:20px;
     font-size: 18px;
     font-weight: 700;
-    box-shadow:2px 2px 15px #2b8510;
+    box-shadow:2px 2px 15px rgb(43, 133, 16);
     transition: 0.5s;
+    border: transparent;
 }
 
 /* header end*/
@@ -71,7 +72,7 @@ body {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.4fr 1fr 0.5fr 1fr;
+    grid-template-rows: 80px 350px 250px auto;
     grid-template-areas: 
     "head head"
     "photo experience"
@@ -151,6 +152,14 @@ body {
     color: yellow;
     font-weight: 800;
     font-size: 20px;
+    transition: 0.5s;
+}
+
+.lftbtn:hover,
+.rtbtn:hover {
+    color: rgb(235, 28, 28);
+    background-color: rgb(0, 255, 255);
+    transform: scale(1.02, 1.02);
 }
 
 /* avatar end */
@@ -196,6 +205,7 @@ body {
 .skills {
     grid-area: skills;
     background-color: rgba(114, 245, 8, 0.5);
+    height: 340px;
 }
 
 .tekskills,
@@ -213,14 +223,19 @@ body {
 }
 
 .company-block {
-    margin: 10px;
+    margin: 15px 10px;
 }
 
 .company-btn {
-    color: rgb(7, 245, 7);
+    color: rgb(8, 92, 8);
     width: 100%;
-    height: 30px;
-    background-color: rgba(24, 54, 226, 0.5);
+    height: 50px;
+    background-color: rgb(250, 234, 11);
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
 }
 
 .company-info {
@@ -263,7 +278,7 @@ body {
 .modal_content {
     max-width: 700px;
     min-height: 100px;
-    background: rgba(199, 239, 241, 0.5);
+    background: rgba(199, 239, 241, 0.8);
     border-radius: 20px;
     text-align: center;
     justify-self: center;
@@ -277,6 +292,10 @@ body {
     font-weight: 700;
     color: red;
     margin: 15px;
+}
+
+.godlogo {
+    height: 120px;
 }
 
 .modal_content p {
@@ -405,6 +424,12 @@ h4 {
 
 }
 
+
+.active, .company-btn:hover {
+    color: #f30b0b;
+    background-color: #1e8b03;
+    font-weight: 700;
+}
 
 
 .hidden {
