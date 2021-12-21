@@ -79,6 +79,8 @@ let musoff=document.querySelector('.soundbtn');
 musoff.addEventListener("click", ()=> {
   aud.volume=0.0;
   console.log('Музика выкл')
+    musoff.classList.toggle('muzonoff');
+    musoff.innerHTML.toggle='<i class="fas fa-volume-mute"></i>';
 })
 
 /* Audio end */
