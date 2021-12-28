@@ -1,6 +1,12 @@
 
 console.log('JS подключен!');
 
+/* lang */
+
+
+
+/* lang end */
+
 /* Avatar move */
 const btnl=document.querySelector('.lftbtn');
 const btnr=document.querySelector('.rtbtn');
@@ -67,6 +73,7 @@ function togglefunc() {
 
 let aud=document.querySelector('.audioset');
 
+
 function muzon() {
 aud.volume=0.1;
 console.log('Музон он');
@@ -80,7 +87,7 @@ musoff.addEventListener("click", ()=> {
   aud.volume=0.0;
   console.log('Музика выкл')
     musoff.classList.toggle('muzonoff');
-    musoff.innerHTML.toggle='<i class="fas fa-volume-mute"></i>';
+    musoff.innerHTML='<i class="fas fa-volume-mute"></i>';
 })
 
 /* Audio end */

@@ -38,7 +38,7 @@ body {
 }
 
 .muzonoff {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(13, 220, 235, 0.5);
 }
 
 .cvloader {
@@ -159,14 +159,13 @@ body {
 }
 
 .lftbtn,
-.rtbtn {
+.rtbtn{
     padding: 5px 10px;
-    border-radius: 20px;
     background-color: transparent;
-    color: yellow;
     font-weight: 800;
     font-size: 20px;
     transition: 0.5s;
+    border-radius: 50%;
 }
 
 .lftbtn:hover,
