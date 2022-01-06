@@ -71,7 +71,7 @@ body {
 .cvblock {
     display: grid;
     grid-auto-flow: column;
-    max-width: 1000px;
+    max-width: 1200px;
     min-height: 100vh;
     margin: 20px auto;
     padding: 15px;
@@ -125,7 +125,6 @@ body {
 
 .headblock:hover {
     box-shadow:2px 2px 15px rgb(239, 243, 0);
-    background-color: rgba(248, 232, 0, 0.5);
 }
 
 /* avatar */
@@ -146,6 +145,11 @@ body {
     max-height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    transition: 1s;
+}
+
+.avatar:hover {
+    box-shadow:4px 4px 25px rgb(8, 243, 0);
 }
 
 .avatarbtn {
@@ -172,7 +176,7 @@ body {
 .rtbtn:hover {
     color: rgb(235, 28, 28);
     box-shadow:2px 2px 15px rgb(22, 255, 1);
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(210, 255, 47);
     transform: scale(1.02, 1.02);
 }
 
@@ -249,7 +253,6 @@ body {
     border: none;
     font-size: 18px;
     font-weight: 700;
-    transition: 0.5s;
 }
 
 .company-info {
@@ -297,19 +300,24 @@ body {
     text-align: center;
     justify-self: center;
     position: fixed;
-    top:30%;
+    top: 15%;
     left: 30%;
 }
 
 .modal_content h4 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 900;
     color: red;
     margin: 15px;
 }
 
-.godlogo {
-    height: 120px;
+.modal_content h3 {
+    color: rgb(130, 0, 17);
+    font-weight: 900;
+}
+
+.modlogo {
+    height: 300px;
 }
 
 .modal_content p {
@@ -389,7 +397,7 @@ h4 {
 @media all and (max-width: 480px) {
     .cvblock {
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 350px 250px 350px auto;
+    grid-template-rows: 80px 350px 250px 300px auto;
     grid-template-areas: 
     "head"
     "photo"
@@ -400,16 +408,33 @@ h4 {
     padding: 10px;
     }
 
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .modlogo {
+        height: 200px;
+    }
+
     .modal_content {
-        max-width: 350px;
-        min-height: 50px;
+        max-width: 100%;
+        min-height: 95%;
         background: rgba(199, 239, 241, 0.5);
         border-radius: 20px;
         text-align: center;
         justify-self: center;
         position: fixed;
-        top:5%;
-        left: 1%;
+        top: 0;
+        left: 0;
+        margin: 5px;
     }
 
     .modal_content p {
@@ -441,10 +466,17 @@ h4 {
 
 /* adaptive end */
 
-.active, .company-btn:hover {
+.active {
     color: #f30b0b;
     background-color: #1e8b03;
-    font-weight: 700;
+    font-weight: 800;
+    text-shadow: 4px 4px 8px #071ce0;
+}
+
+.company-btn:hover {
+    color: #0b1af3;
+    background-color: #e637e6;
+    font-weight: 800;
 }
 
 
