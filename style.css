@@ -17,7 +17,7 @@ body {
 /* header */
 
 .tecblock{
-    background-color: rgba(33, 65, 124, 0.2);
+    background-color: rgba(11, 97, 255, 0.2);
     min-height: 35px;
     display: flex;
     align-items: center;
@@ -138,6 +138,7 @@ body {
     display: flex;
     justify-content: center;
     transition: 1s;
+    position: relative;
 }
 
 
@@ -147,6 +148,7 @@ body {
     overflow: hidden;
     transition: 1s;
 }
+
 
 .avatar:hover {
     box-shadow:4px 4px 25px rgb(8, 243, 0);
