@@ -1,5 +1,31 @@
 
-console.log('JS подключен!');
+/* Audio */
+
+let aud=document.querySelector('.audioset');
+
+
+function muzon() {
+aud.volume=0.05;
+}
+
+muzon();
+
+let musoff=document.querySelector('.soundbtn');
+
+musoff.addEventListener("click", ()=> {
+    
+    musoff.classList.toggle('muzonoff');
+
+    if (musoff.classList.contains('muzonoff')) {
+        musoff.innerHTML='<i class="fas fa-volume-mute"></i>';
+        aud.volume=0.0;
+    } else {
+        musoff.innerHTML='<i class="fas fa-volume-off"></i>';
+        aud.volume=0.05;
+    }
+})
+
+/* Audio end */
 
 /* lang */
 
@@ -81,37 +107,3 @@ function modalhide() {
 modBtn.addEventListener('click', modalhide)
 
 /* Modal end */
-
-
-/* Audio */
-
-let aud=document.querySelector('.audioset');
-
-
-function muzon() {
-aud.volume=0.1;
-console.log('Музон он');
-}
-
-muzon();
-
-let musoff=document.querySelector('.soundbtn');
-
-musoff.addEventListener("click", ()=> {
-    
-    musoff.classList.toggle('muzonoff');
-
-    if (musoff.classList.contains('muzonoff')) {
-        musoff.innerHTML='<i class="fas fa-volume-mute"></i>';
-        aud.volume=0.0;
-        console.log('Музика выкл')
-
-    } else {
-        musoff.innerHTML='<i class="fas fa-volume-off"></i>';
-        aud.volume=0.1;
-        console.log('Музика вкл')
-    }
-    
-})
-
-/* Audio end */
