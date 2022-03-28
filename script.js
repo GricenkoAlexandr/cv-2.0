@@ -29,7 +29,18 @@ musoff.addEventListener("click", ()=> {
 
 /* lang */
 
+/*
+const select=document.querySelector('.clang').value;
+const allLang = ['en', 'ru', 'ua'];
 
+select.addEventListener('change', changeLang);
+
+
+
+
+
+
+console.log(select);
 
 /* lang end */
 
